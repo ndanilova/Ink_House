@@ -59,6 +59,9 @@ header {
   border: 0;
 }
 
+.home_link {
+  width: fit-content;
+}
 .hero {
   display: flex;
 }
