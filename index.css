@@ -53,15 +53,15 @@ header {
   font-weight: 500;
   line-height: 23.48px;
 }
+.home_link {
+  min-width: 55px;
+}
 
 .home_links button {
   background: 0;
   border: 0;
 }
 
-.home_link {
-  min-width: 55px;
-}
 .hero {
   display: flex;
 }
@@ -124,11 +124,31 @@ header {
   background-color: #d4e8d9;
   border: transparent;
 }
+.countries button.active {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.48px;
+  border-radius: 20px;
+  width: 126px;
+  height: 43px;
+  background-color: #376b44;
+  color: #f4f6f5;
+  border: transparent;
+}
+.countries button:hover {
+  cursor: pointer;
+}
+.countries button:active {
+  transform: scale(0.95);
+}
 .catalog {
   width: 1110px;
   margin-left: 165px;
 }
-.france {
+.country-section {
+  display: none;
+}
+.country-section.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -184,6 +204,7 @@ header {
   font-weight: 500;
   line-height: 23.48px;
 }
+
 .promo::before {
   content: "";
   position: absolute;
