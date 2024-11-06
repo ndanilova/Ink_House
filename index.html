@@ -24,9 +24,9 @@
       </nav>
     </div>
     <div class="home_links">
-      <nav class="home_link"><a href="">Репродукции</a></nav>
-      <nav class="home_link"><a href="">Новинки</a></nav>
-      <nav class="home_link"><a href="">О нас</a></nav>
+      <nav class="home_link"><a href="#catalog">Репродукции</a></nav>
+      <nav class="home_link"><a href="#promo">Новинки</a></nav>
+      <nav class="home_link"><a href="#team">О нас</a></nav>
 
       <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_3_996)">
@@ -51,7 +51,7 @@
 
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero_image"><img src="style/images/hero_bird.png" alt="bird"></div>
       <div class="hero_text_box">
         <h1>Реплики картин от <span>Ink. House</span></h1>
@@ -59,18 +59,18 @@
         <button>Продукция</button>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="catalog_box">
         <div class="frame">
           <h2>Репродукции</h2>
           <div class="countries">
-            <button>Франция</button>
-            <button>Германия</button>
-            <button>Англия</button>
+            <button data-country="france" class="active">Франция</button>
+            <button data-country="germany">Германия</button>
+            <button data-country="england">Англия</button>
           </div>
 
         </div>
-        <div class="france">
+        <div class="country-section france active">
           <div class="frames">
             <div class="card">
               <img src="style/images/1_1.png" alt="amour">
@@ -124,9 +124,117 @@
             </div>
           </div>
         </div>
+        <div class="country-section germany">
+          <div class="frames">
+            <div class="card">
+              <img src="style/images/ger1.png" alt="amour">
+              <span class="author">Марсель</span>
+              <span class="name">Охота Амура</span>
+              <span class="type">Холст, масло (50х80)</span>
+              <span class="price">14 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/ger2.png" alt="amour">
+              <span class="author">Анри Селин</span>
+              <span class="name">Дама с собачкой</span>
+              <span class="type">Акрил, бумага (50х80) </span>
+              <span class="price">16 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/ger3.png" alt="amour">
+              <span class="author">Франсуа Дюпон</span>
+              <span class="name">Процедура</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">20 000 руб</span>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="frames">
+            <div class="card">
+              <img src="style/images/ger4.png" alt="amour">
+              <span class="author">Луи Детуш</span>
+              <span class="name">Роза</span>
+              <span class="type">Бумага, акрил (50х80) </span>
+              <span class="price">12 000 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/ger5.png" alt="amour">
+              <span class="author">Франсуа Дюпон</span>
+              <span class="name">Птичья трапеза</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">22 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/ger6.png" alt="amour">
+              <span class="author">Пьер Моранж</span>
+              <span class="name">Пейзаж с рыбой</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">20 000 руб</span>
+              <button>В корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="country-section england">
+          <div class="frames">
+            <div class="card">
+              <img src="style/images/eng1.png" alt="amour">
+              <span class="author">Марсель</span>
+              <span class="name">Охота Амура</span>
+              <span class="type">Холст, масло (50х80)</span>
+              <span class="price">14 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/eng2.png" alt="amour">
+              <span class="author">Анри Селин</span>
+              <span class="name">Дама с собачкой</span>
+              <span class="type">Акрил, бумага (50х80) </span>
+              <span class="price">16 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/eng3.png" alt="amour">
+              <span class="author">Франсуа Дюпон</span>
+              <span class="name">Процедура</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">20 000 руб</span>
+              <button>В корзину</button>
+            </div>
+          </div>
+          <div class="frames">
+            <div class="card">
+              <img src="style/images/eng4.png" alt="amour">
+              <span class="author">Луи Детуш</span>
+              <span class="name">Роза</span>
+              <span class="type">Бумага, акрил (50х80) </span>
+              <span class="price">12 000 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/eng5.png" alt="amour">
+              <span class="author">Франсуа Дюпон</span>
+              <span class="name">Птичья трапеза</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">22 500 руб</span>
+              <button>В корзину</button>
+            </div>
+            <div class="card">
+              <img src="style/images/eng6.png" alt="amour">
+              <span class="author">Пьер Моранж</span>
+              <span class="name">Пейзаж с рыбой</span>
+              <span class="type">Цветная литография (40х60) </span>
+              <span class="price">20 000 руб</span>
+              <button>В корзину</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="promo">
+    <section class="promo" id="promo">
       <div class="promo_text_box">
         <div class="title">
           <svg class="star" width="130" height="100" viewBox="0 0 80 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +255,7 @@
         <button>Ознакомиться</button>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="team_box">
         <div class="two_images">
           <img class="image frame" src="style/images/frame.png" alt="pic">
@@ -228,6 +336,7 @@
 
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
